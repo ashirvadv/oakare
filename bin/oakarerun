@@ -1,0 +1,10 @@
+#!/bin/bash
+# oakarerun
+
+if [ ! -f var/insta485.sqlite3 ]; then
+	./bin/oakaredb create
+fi
+export FLASK_DEBUG=True
+export FLASK_APP=oakare
+export OAKARE_SETTINGS=config.py
+flask run --host 0.0.0.0 --port 8000
