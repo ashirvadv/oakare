@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Oakare</title>
+	<link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+
+	<body>
+		<div class="NavBar">
+			<ul>
+				<li>
+					<a href="index.html">
+						<img src="{{logo_url}}" alt="logo"> | Oakare
+					</a>
+				</li>
+			</ul>
+			<br>
+			<br>
+			<br>
+			<br>
+		</div>
+
+		<div class="Dashboard">
+			<div class="PersonalInfo">
+				<h1>Welcome {{ user_first_name }}</h1>
+				<h1>Date of Birth: {{ user_dob }}</h1>
+				<h1>Gender: {{ user_sex }}</h1>
+			</div>
+			<div class="AccountLink">
+				<a href="account/{{username}}">Account</a>
+			</div>
+			<div class="UsersLink">
+				<a href="users/{{username}}">Users</a>
+			</div>
+			<div class="HealthInfoLink">
+				<a href="health/{{username}}">Health Information</a>
+			</div>
+		</div>
+		<div class="UserPic">
+			<img src="static/images/{{user_filename}}" alt="user picture">
+		</div>
+
+		<div class="FamilyTree">
+		</div>
+	</body>
+
+</html>
