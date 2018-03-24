@@ -14,5 +14,6 @@ def show_welcome():
 
 	context = {}
 	context['username'] = 'ashvarma'
+	context['user_first_name'] = 'Ashirvad'
 	context['logo_url'] = get_logo_path()
 	return flask.render_template("welcome.html", **context)
